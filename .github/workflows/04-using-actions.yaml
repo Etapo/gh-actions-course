@@ -1,6 +1,9 @@
+#0. Checkout the code in th repository
+#1. Install Deps of our React application
+#2. Executed automated tests
 name: 04 - Using Actions
 
-on: push
+on: workflow_dispatch
 
 jobs:
     build:
@@ -8,10 +11,6 @@ jobs:
         defaults:
             run:
                 working-directory: 04-using-actions/react-app
-        #0. Checkout the code in th repository
-        #1. Install Deps of our React application
-        #2. Executed automated tests
-
         steps:
             - name: Checkout Code
               uses: actions/checkout@v4
