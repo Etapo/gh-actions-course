@@ -1,6 +1,26 @@
 name: 02 - Workflow Events
 
-on: push
+#On peut mettre plusieurs évèments
+#on:
+#  - push
+#  - pull_request
+#On peut aussi définir les évèments comme des objets
+#on:
+#  push:
+#  pull_request:
+#Cela permet d'ajouter les options sur les evenements, par exemple le cron(comme batch)
+#on:
+#  push:
+#  pull_request:
+#  schedule:
+#       - cron: "*/5 * * * *"
+#  workflow_dispatch:
+on:
+  push:
+  pull_request:
+  schedule:
+       - cron: "*/5 * * * *"
+  workflow_dispatch:
 
 jobs:
     echo:
