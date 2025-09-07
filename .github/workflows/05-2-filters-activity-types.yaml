@@ -2,10 +2,12 @@ name: 05 - 2 - Event Filters and Activity Types
 
 run-name: ${{ github.actor }} is learning GitHub Actions - Pull Request
 
-on:
-    pull_request:
-        types: [closed]
-        branches: [main]
+#on:
+#    pull_request:
+#        types: [closed]
+#        branches: [main]
+
+on: workflow_dispatch
 
 jobs:
     echo:
